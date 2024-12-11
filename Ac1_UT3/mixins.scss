@@ -1,0 +1,30 @@
+@import "./variables";
+
+// Exercise 3
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+//Exercise 4
+.text-style {
+  text-decoration: underline dotted;
+  text-transform: uppercase;
+}
+
+//Exercise 6
+@function adjust-color($color, $amount) {
+  @if $amount > 0 {
+    @return lighten($color, $amount);
+  } @else {
+    @return darken($color, $amount);
+  }
+}
+
+//Exercise 7
+@mixin responsive-padding($screen-size) {
+  @if $screen-size == "large" {
+    padding: 20px;
+  } @else {
+    padding: 10px;
+  }
+}

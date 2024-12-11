@@ -1,0 +1,35 @@
+//Exercise 5
+@import "./variables";
+@import "./mixins";
+
+
+//Exercise 2
+.profile-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // Exercise 7
+    @include responsive-padding("small");
+    @media (min-width: 768px) {
+        @include responsive-padding("large");
+    }
+    .avatar {
+        // Exercise 6
+        border: solid 2px adjust-color($secondary-color, 50);
+        width: 200px;
+        // Exercise 3
+        @include border-radius(50%);
+    }
+    .name {
+        color: $primary-color;
+        font-family: $primary-font;
+        // Exercise 4
+        @extend .text-style;
+    }
+    .role {
+        color: $secondary-color;
+        font-family: $secondary-font;
+        // Exercise 4
+        @extend .text-style;
+    }
+}

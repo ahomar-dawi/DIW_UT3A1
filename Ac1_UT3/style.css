@@ -1,0 +1,31 @@
+.text-style, .profile-card .role, .profile-card .name {
+  text-decoration: underline dotted;
+  text-transform: uppercase;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .profile-card {
+    padding: 20px;
+  }
+}
+.profile-card .avatar {
+  border: solid 2px rgb(243.4239130435, 195.5760869565, 195.5760869565);
+  width: 200px;
+  border-radius: 50%;
+}
+.profile-card .name {
+  color: #3274a8;
+  font-family: Steradian, sans-serif;
+}
+.profile-card .role {
+  color: #9a1e1e;
+  font-family: Courier, monospace;
+}
+
+/*# sourceMappingURL=style.css.map */
